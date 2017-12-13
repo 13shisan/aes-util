@@ -12,7 +12,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.util.encoders.Hex;
 
 /**
- * @Description AES加密解密
+ * @Description AES算法工具类
  * @author 王鑫
  * @date Dec 13, 2017 12:50:39 PM
  */
@@ -90,8 +90,6 @@ public class AESUtil {
             Security.addProvider(new BouncyCastleProvider());
         } catch (Exception e) {
             System.err.println("# 初始化运算环境失败");
-        } finally {
-            System.out.println("# 初始化运算环境结束");
         }
     }
 }

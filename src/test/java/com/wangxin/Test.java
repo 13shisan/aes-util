@@ -8,11 +8,11 @@ public class Test {
 
     public static void main(String[] args) {
         String key = RandomStringUtils.randomNumeric(16);// 生成KEY
-        String paramString = "张三";// 业务参数
-        String enc = AESUtil.encryptToString(paramString, key);// 加密
+        String param = "王鑫";// 业务参数
+        String enc = AESUtil.encryptToString(param, key);// 加密
         String dec = AESUtil.decryptToString(enc, key);// 解密
-        System.out.println(key);
-        System.out.println(enc);
-        System.out.println(dec);
+        System.out.println("key:" + key);
+        System.out.println(param + " ==>> " + enc);
+        System.out.println(enc + " ==>> " + dec);
     }
 }
